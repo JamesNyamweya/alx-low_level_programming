@@ -1,0 +1,16 @@
+#include "main.h"
+
+/**
+ * factorial - Factorial of a number
+ * @n: The number where the factorial returns from
+ * Return: Returns a factorial of n
+ */
+
+int factorial(int n)
+{
+	if (n < 0)
+		return (-1);
+	if (n == 0)
+		return (1);
+	return (n * factorial(n - 1));
+}
